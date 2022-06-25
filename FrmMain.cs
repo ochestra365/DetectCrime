@@ -32,7 +32,7 @@ namespace DetectCrime
 
       private void BtnClose_Click(object sender, EventArgs e)
       {
-         this.Close();
+         if (MessageBox.Show("종료하시겠습니까?", "종료", MessageBoxButtons.YesNo) == DialogResult.Yes) Application.Exit();
       }
    }
 }
