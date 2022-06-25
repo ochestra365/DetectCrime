@@ -60,6 +60,14 @@ namespace DetectCrime.Controller
       {
          _textbox.TextAlign = HorizontalAlignment.Center;
          _textbox.Font = new Font("나눔고딕코딩", 10, FontStyle.Bold);
+         _textbox.BorderStyle = BorderStyle.FixedSingle;
+      }
+      #endregion
+
+      #region 데이터 그리드 뷰
+      internal static void DrgSetting(DataGridView _view)
+      {
+
       }
       #endregion
    }

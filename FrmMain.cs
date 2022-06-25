@@ -28,11 +28,22 @@ namespace DetectCrime
          UIController.FormBasic(this);
          UIController.ButtonSetting(BtnClose);
          UIController.ButtonSetting(button1);
+         PanelMain.BackColor = Color.FromArgb(64, 64, 64);
       }
 
       private void BtnClose_Click(object sender, EventArgs e)
       {
          if (MessageBox.Show("종료하시겠습니까?", "종료", MessageBoxButtons.YesNo) == DialogResult.Yes) Application.Exit();
+      }
+
+      private void cCTV리스트ToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+
+      }
+
+      private void SubMenuListRobot_Click(object sender, EventArgs e)
+      {
+
       }
    }
 }

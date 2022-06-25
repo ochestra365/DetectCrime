@@ -10,7 +10,6 @@ namespace DetectCrime.View
       {
          InitializeComponent();
       }
-
       private void LoginForm_Load(object sender, EventArgs e)
       {
          UIController.SmallForm(this);
@@ -21,8 +20,12 @@ namespace DetectCrime.View
          UIController.ButtonSetting(BtnClose);
          textBox2.PasswordChar = '●';
          CenterToScreen();
+         // 탭 인덱스
+         textBox1.TabIndex = 0;
+         textBox2.TabIndex = 1;
+         BtnLogin.TabIndex = 2;
+         BtnClose.TabIndex = 3;
       }
-
       private void BtnLogin_Click(object sender, EventArgs e)
       {
          if (!String.IsNullOrEmpty(textBox1.Text) && !String.IsNullOrEmpty(textBox2.Text))
