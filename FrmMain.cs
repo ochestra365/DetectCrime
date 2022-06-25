@@ -22,5 +22,17 @@ namespace DetectCrime
       {
 
       }
+
+      private void FrmMain_Load(object sender, EventArgs e)
+      {
+         UIController.FormBasic(this);
+         UIController.ButtonSetting(BtnClose);
+         UIController.ButtonSetting(button1);
+      }
+
+      private void BtnClose_Click(object sender, EventArgs e)
+      {
+         this.Close();
+      }
    }
 }

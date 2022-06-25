@@ -30,6 +30,7 @@ namespace DetectCrime
       private void InitializeComponent()
       {
          this.button1 = new System.Windows.Forms.Button();
+         this.BtnClose = new System.Windows.Forms.Button();
          this.SuspendLayout();
          // 
          // button1
@@ -42,14 +43,27 @@ namespace DetectCrime
          this.button1.UseVisualStyleBackColor = true;
          this.button1.Click += new System.EventHandler(this.button1_Click);
          // 
+         // BtnClose
+         // 
+         this.BtnClose.FlatAppearance.BorderSize = 0;
+         this.BtnClose.Location = new System.Drawing.Point(322, 154);
+         this.BtnClose.Name = "BtnClose";
+         this.BtnClose.Size = new System.Drawing.Size(75, 23);
+         this.BtnClose.TabIndex = 1;
+         this.BtnClose.Text = "종료";
+         this.BtnClose.UseVisualStyleBackColor = true;
+         this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+         // 
          // FrmMain
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.ClientSize = new System.Drawing.Size(800, 450);
+         this.Controls.Add(this.BtnClose);
          this.Controls.Add(this.button1);
          this.Name = "FrmMain";
          this.Text = "DetectCrime";
+         this.Load += new System.EventHandler(this.FrmMain_Load);
          this.ResumeLayout(false);
 
       }
@@ -57,6 +71,7 @@ namespace DetectCrime
       #endregion
 
       private System.Windows.Forms.Button button1;
+      private System.Windows.Forms.Button BtnClose;
    }
 }
 
